@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+  }
+
+  /* col-4 col-lg-6 col-s-12 col-xs-12 */
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    background-color: aliceblue;
+  }
+
+  .head{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        opacity: 0.9;
+  }
+
+  .head h2{
+      font-size: 32px;
+      padding: 10px;
+      color: #292B2C;
+      /* font-family: 'K2D',sans-serif; */
+      font-weight: 700;
+  }
+
+  .head #head_p{
+      font-size: 18px;
+      padding: 10px;
+      color: #888888;
+      font-weight: 400;
+  }
+
+  .text_card{
+     
+      color: #888888;
+  }
+  .h3{
+      font-size: 25px;
+      padding-top: 5px;
+      padding-bottom: 0px;
+      
+  }
+
+  a{
+      color: #292B2C;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+  }
+
+  .tour_price{
+      
+      padding-bottom: 20px;
+  }
+
+  .col-6{
+    border-top: 1px solid #ddd;
+}
+
+  .tours_image {
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+  }
+
+  .tours_image::before{
+      content: '';
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: .2s all ease;
+      border-radius: 10px;
+      opacity: 0;
+      
+  }
+
+  .tourd:hover .tours_image::before{
+      opacity: 1;
+  }
+.button_below{
+    text-align: center;
+    margin-top: 50px;
+}
+  .button_below a{
+      display: inline-block;
+      color: #fff;
+      background-color: #fd5638;
+      padding: 10px 30px;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  .button_below i{
+      color: #fff;
+      font-size: 22px;
+      margin-left:5px ;
+      line-height: 1;
+      vertical-align: middle;
+  }
+  img{
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+
+  .tourd{
+      border-radius: 12px;
+      padding: 20px;
+      overflow: hidden;
+     
+
+  }
+  .col-4{
+      border-radius: 12px;
+  }
+
+  .tour_price_icon{
+      padding-top: 25px;
+
+     
+  }
+
+  .tour_price .price{
+      font-size: 24px;
+      font-weight: bold;
+  }
+
+  span{
+      font-size: 14px;
+      color: #888888;
+  }
+
+  i{
+      color: rgb(241, 241, 11);
+
+  }
+
+  .col-6:last-child {
+      flex-direction: column;
+      text-align: end;
+      
+  }
+
+  .col-6:last-child .rating{
+      line-height: 2;
+  }
+
+  .text{
+      padding: 15px;
+      background-color: #fff;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+  }
+
+  .tour_price{
+      color: orange;
+      font-size: 20px;
+      padding-top: 20px;
+  }
+
+  /* span{
+    color: #888888;
+    font-size: 12px;
+
+  } */
+
+  .text_card p{
+        margin: 0px 0px 16px;
+        font-size: 14px;
+        color: #888888;
+        font-family: 'Poppins', sans-serif;
+        line-height: normal;
+        letter-spacing: 0.3px
+  }
+
+  .col-6{
+      display: flex;  
+  }
+
+  .button{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: .4s all ease;
+    
+  }
+
+  .tourd:hover .tours_image .button{
+      opacity: 1;
+      top: 50%;
+  }
+
+
+
+  .button a{
+      display: inline-block;
+      
+      padding: 10px 30px;
+      background-color: #fd5638;
+      border-radius: 5px;
+      color: #fff;
+  }
+  
+  
+
+ /* media */
+
+ @media only screen and (max-width:1200px){
+    .head_h2{
+        font-size: 32px;
+    }
+    #head_p{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .head_h2{
+        font-size: 30px;
+    }
+    #head_p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .head_h2{
+        font-size: 25px;
+    }
+    #head_p{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .head_h2{
+        font-size: 22px;
+    }
+    #head_p{
+        font-size: 11px;
+    }
+}
